@@ -66,8 +66,9 @@ def format_pie_chart(df):
     return fig
 
 def main():
+    st.title("🚀 Benvenuto in CronoWatch di Salvatore")
     st.set_page_config("CronoWatch Pro", layout="wide", page_icon="🧠")
-    st.markdown("<h1 style='color:#00AEEF;'>👋 Benvenuto Piero in CronoWatch Pro</h1><p style='color:#FAFAFA;'>Monitoraggio automatico WCRO + Analisi Token</p>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:#00AEEF;'>👋 Benvenuto Salvatore in CronoWatch Pro</h1><p style='color:#FAFAFA;'>Monitoraggio automatico WCRO + Analisi Token</p>", unsafe_allow_html=True)
 
     with st.spinner("🔄 Recupero dati da Cronoscan..."):
         # Recupero dati
