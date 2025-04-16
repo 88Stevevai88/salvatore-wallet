@@ -1,10 +1,12 @@
-
 import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
 from token_parser import estrai_token_da_input
+st.set_page_config("CronoWatch Pro", layout="wide", page_icon="🧠")
+
+
 
 # === CONFIG ===
 WALLET = "0xbe19c5ef6289636f74ceb65ce2a618255b397977".lower()
@@ -67,7 +69,6 @@ def format_pie_chart(df):
 
 def main():
     st.title("🚀 Benvenuto in CronoWatch di Salvatore")
-    st.set_page_config("CronoWatch Pro", layout="wide", page_icon="🧠")
     st.markdown("<h1 style='color:#00AEEF;'>👋 Benvenuto Salvatore in CronoWatch Pro</h1><p style='color:#FAFAFA;'>Monitoraggio automatico WCRO + Analisi Token</p>", unsafe_allow_html=True)
 
     with st.spinner("🔄 Recupero dati da Cronoscan..."):
