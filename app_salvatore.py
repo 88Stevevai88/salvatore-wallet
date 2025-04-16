@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 from token_parser import estrai_token_da_input
+from token_lookup import get_token_name_from_cronoscan
 st.set_page_config("CronoWatch Pro", layout="wide", page_icon="🧠")
 
 
